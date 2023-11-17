@@ -1,0 +1,14 @@
+<html>
+<head>
+        <title>User Management Dashboard</title>
+</head>
+<body>
+    <h1>User Management Dashboard</h1>
+    <ul>
+        <li><a href="{% url 'user_details' %}">User Details</a></li>
+        <li><a href="{% url 'account_creation' %}">Account Creation</a></li>
+    </ul>
+    {% block content %}{% endblock %}
+</body>
+ 
+</html>

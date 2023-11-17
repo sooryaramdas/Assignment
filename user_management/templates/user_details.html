@@ -1,0 +1,26 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+ <h2>User Details</h2>
+ <table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>ID</th>
+            <th>Creation Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.id }}</td>
+                <td>{{ user.creation_date }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+ </table>
+ {% endblock %}
